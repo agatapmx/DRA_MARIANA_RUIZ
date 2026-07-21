@@ -3,28 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dra. Mariana Ruiz </title>
+<title>Dra. Mariana Ruíz | Ginecología &amp; Obstetricia · Medicina Materno Fetal</title>
 
-<!-- Google Fonts:
-     - Cormorant Garamond (serif, elegante) -> texto del sello y dirección
-     - Poppins (sans-serif redondeada) -> botones de enlace
-     - Caveat (manuscrita) -> frase decorativa -->
+<!-- Google Fonts: Poppins (sans-serif limpia y moderna) para todo el documento -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
   :root{
-    /* ---- Paleta de colores (ajusta aquí si tu marca usa otros tonos) ---- */
-    --cream: #f3ead9;          /* fondo del sello y tarjeta */
-    --cream-soft: #f0e6d4;
-    --olive: #55523c;          /* color de los botones */
-    --olive-dark: #45422f;     /* hover de los botones */
-    --ink: #333333;
-    --ink-soft: #333333;
-    --card-bg: rgba(243, 234, 217, 0.86); /* tarjeta translúcida sobre la foto */
-    --shadow: rgba(40, 35, 20, 0.18);
+    /* ---- Paleta de colores Dra. Mariana Ruíz ---- */
+    --cream: #FFFFFF;          /* fondo del sello, blanco puro/transparente */
+    --card-bg-color: #FAF8F5;  /* blanco roto para la tarjeta */
+    --pink: #D4A3A8;           /* rosa palo/empolvado para los botones */
+    --pink-dark: #B37A80;      /* hover de los botones, rosa más profundo */
+    --ink: #4A4A4A;            /* gris oscuro y formal para el texto */
+    --ink-soft: #4A4A4A;
+    --card-bg: rgba(250, 248, 245, 0.90); /* tarjeta translúcida sobre la foto */
+    --shadow: rgba(60, 45, 45, 0.16);
   }
 
   *{
@@ -46,7 +43,7 @@
     justify-content: center;
     padding: 48px 16px;
 
-    background: #1a1608;
+    background: #1f1a1a;
   }
 
   /* ============ IMAGEN DE FONDO ============ */
@@ -66,7 +63,7 @@
   .bg-overlay{
     position: absolute;
     inset: 0;
-    background: rgba(30, 24, 12, 0.25);
+    background: rgba(30, 20, 20, 0.25);
   }
 
   /* ============ TARJETA PRINCIPAL ============ */
@@ -78,19 +75,19 @@
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-radius: 32px;
-    padding: 226px 28px 44px;
+    padding: 176px 28px 44px;
     box-shadow: 0 20px 45px var(--shadow);
     text-align: center;
   }
 
-  /* ============ SELLO / LOGO OVALADO ============ */
+  /* ============ SELLO / LOGO OVALADO (acostado) ============ */
   .seal{
     position: absolute;
     top: -38px;
     left: 50%;
     transform: translateX(-50%);
-    width: 190px;
-    height: 240px;
+    width: 240px;
+    height: 190px;
   }
 
   .seal-shape{
@@ -124,7 +121,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #387C8A;
+    background: var(--pink);
     color: #ffffff;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -140,11 +137,12 @@
   .links a i{
     font-size: 18px;
     flex-shrink: 0;
+    color: #ffffff;
   }
 
   .links a:hover,
   .links a:focus-visible{
-    background: #2d6875;
+    background: var(--pink-dark);
     transform: translateY(-2px) scale(1.015);
     box-shadow: 0 10px 20px var(--shadow);
   }
@@ -158,20 +156,12 @@
     outline-offset: 3px;
   }
 
-  /* ============ FRASE MANUSCRITA ============ */
-  .tagline{
-    font-family: 'Caveat', cursive;
-    font-weight: 600;
-    font-size: 26px;
-    color: var(--ink-soft);
-    margin: 6px 0 26px;
-  }
-
   /* ============ DATOS DE CONTACTO ============ */
   .contact{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
     color: var(--ink);
   }
 
@@ -179,14 +169,27 @@
     margin: 0;
   }
 
+  .contact .specialties{
+    margin-bottom: 14px;
+  }
+
+  .contact .specialties p{
+    margin: 2px 0;
+  }
+
+  .contact .meta{
+    font-size: 14px;
+    color: var(--ink);
+  }
+
   @media (max-width: 360px){
     .card{
-      padding-top: 196px;
+      padding-top: 151px;
       border-radius: 26px;
     }
     .seal{
-      width: 165px;
-      height: 210px;
+      width: 210px;
+      height: 165px;
       top: -34px;
     }
     .links a{
@@ -198,41 +201,41 @@
 </head>
 <body>
 
-  <!-- ============ IMAGEN DE FONDO ============
-       Reemplaza la URL de abajo por el link de internet de tu imagen -->
+  <!-- ============ IMAGEN DE FONDO ============ -->
   <div class="bg-wrapper">
-    <img src="MARIANA fondo.png" alt="Fondo de Dra. Mariana Ruiz">
+    <img src="MARIANA fondo_FINAL.png" alt="Fondo de la Dra. Mariana Ruíz">
     <div class="bg-overlay"></div>
   </div>
 
   <main class="card">
 
-    <!-- ============ SELLO / LOGO ============
-         Pon tu archivo de logo (por ejemplo "logo.png" o "logo.jpg")
-         en esta misma carpeta, junto a este index.html, y cambia el
-         "src" de abajo por su nombre de archivo. Idealmente cuadrado
-         o vertical, se recorta en forma circular automáticamente. -->
+    <!-- ============ SELLO / LOGO ============ -->
     <div class="seal">
       <div class="seal-shape">
-        <img src="MARIANA logo.jpg" alt="Logo Dra. Mariana Ruiz">
+        <!-- Insertar logo de la Dra. Mariana aquí -->
+        <img src="MARIANA logo_FINAL.jpg" alt="Logo Dra. Mariana Ruíz">
       </div>
     </div>
 
-    <!-- ============ ENLACES ============
-         Reemplaza cada href="#" por la URL real de cada sección. -->
+    <!-- ============ ENLACES ============ -->
     <ul class="links">
-      <li><a href="https://search.google.com/local/writereview?placeid=ChIJ_cNfNeOvKIQRkrge2UbY6W0" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i> Google Reviews</a></li>
-      <li><a href="https://www.instagram.com/lumont.clinic/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://wa.me/523318857875" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Contacto</a></li>
+      <li><a href="https://search.google.com/local/writereview?placeid=ChIJXRhU24SIhkwR-a5Ak_Orcj8" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i> Google Reviews</a></li>
+      <li><a href="https://www.instagram.com/ginecologa.marianaruiz/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+      <li><a href="https://wa.me/523310911654" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Contacto</a></li>
     </ul>
 
-    <p class="tagline">Medicina Materno Fetal </p>
-
-    <!-- ============ DATOS DE CONTACTO ============
-         Cambia dirección, teléfono y usuario de redes por los reales. -->
+    <!-- ============ DATOS DE CONTACTO ============ -->
     <div class="contact">
-      <p>Av. Bethoven 5042, La Estancia, Zapopan, 45030 Guadalajara, Jal.</p>
-      <p>(52) 33 1885 7875 | @ginecologa.marianaruiz</p>
+      <div class="specialties">
+        <p>🌸 Especialista en Ginecología-Obstetricia</p>
+        <p>🤰🏻 MMF</p>
+        <p>🩺 Certificada por CMGO</p>
+        <p>🌷 Atención integral de la mujer</p>
+      </div>
+      <div class="meta">
+        <p>Del Tule 792 A, Puertas del Tule, 45017 Zapopan, Jal.</p>
+        <p>+52 33 1091 1654 | @ginecologa.marianaruiz</p>
+      </div>
     </div>
 
   </main>
